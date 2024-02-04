@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write new chat</title>
+    <link href="./css/style2.css" type="text/css" rel="stylesheet">
+    <style>
+        body{
+            background-color:rgb(250, 192, 192);
+        }
+        .firstDiv{
+            display: inline-block;
+            text-align: center;
+            background-color: aliceblue;
+            border:1px solid black;
+            margin:40px 500px;
+            padding:70px 30px;
+            border-radius: 30px;
+            height: 60vh;
+            width:55vh;
+        }
+        #tochng{
+            background-color: lightcoral;
+            border-radius: 15px;
+            font-size: medium;
+            height:40vh;
+            padding-top:30px;
+            margin:0 30px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="firstDiv">
+        <h3>Write new chat..</h3>
+    <form method="post" action="/chats">
+        <div id="tochng">
+            <input name="from" placeholder="Who are you?"><br><br>
+            <textarea name="msg" placeholder="Write your Message here!"></textarea><br><br>
+            <input name="to" placeholder="add reciever">
+        </div>
+        <br>
+        <br>
+
+        <button>Submit</button>
+    </form>
+    </div>
+    
+</body>
+</html>
